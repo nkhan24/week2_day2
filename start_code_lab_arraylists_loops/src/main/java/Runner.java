@@ -44,7 +44,7 @@ public class Runner {
 
 //        1. Print out a list of the even integers
         //for (int val : numbers){
-           // if (val % 2 == 0){
+        // if (val % 2 == 0){
         //System.out.println("Even integers: " + val);
         //}
         //}
@@ -54,9 +54,12 @@ public class Runner {
             }
         }
 //        2. Print the difference between the largest and smallest value
-        for (int i = 0; i<numbers.size(); i++){
+        int max = Collections.max(numbers);
+        int min = Collections.min(numbers);
 
-            }
+        System.out.println("Difference between largest and smallest: " + (max - min));
+
+
 //        3. Print true if the list contains a 1 next to a 1 somewhere
 //        4. Print the sum of the numbers
 //        5. Print the sum of the numbers...
