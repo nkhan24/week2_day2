@@ -19,9 +19,9 @@ public class Runner {
 //        2. Add "Tiree" to the start of the list
         scottishIslands.add(0, "Tiree");
 //        3. Add "Islay" after "Jura" and before "Mull"
-        scottishIslands.add(2,"Islay");
+        scottishIslands.add(2, "Islay");
 //        4. Print out the index position of "Skye"
-        System.out.println( scottishIslands.indexOf("Skye"));
+        System.out.println(scottishIslands.indexOf("Skye"));
 //        5. Remove "Tresco" from the list by name
         scottishIslands.remove("Tresco");
 //        6. Remove "Arran" from the list by index
@@ -31,8 +31,10 @@ public class Runner {
 //        8. Sort the list alphabetically
         Collections.sort(scottishIslands);
 //        9. Print out all the islands using a for loop
-        for (String locations : scottishIslands)
-        System.out.println("I present Island " + locations);
+        for (String locations : scottishIslands) {
+            System.out.println("I present Island " + locations);
+        }
+        System.out.println(scottishIslands);
 
 //        NUMBERS
         List<Integer> numbers = new ArrayList<>();
@@ -41,12 +43,20 @@ public class Runner {
         System.out.println("numbers: " + numbers);
 
 //        1. Print out a list of the even integers
-        for (int i = 0; i<numbers.size(); i++){
-            if (numbers.get(i) %2 == 0)
-            System.out.println("Even integers: " + numbers.get(i));
+        //for (int val : numbers){
+           // if (val % 2 == 0){
+        //System.out.println("Even integers: " + val);
+        //}
+        //}
+        for (int i = 0; i<numbers.size(); i++) {
+            if (numbers.get(i) % 2 == 0) {
+                System.out.println("Even integers: " + numbers.get(i));
+            }
         }
 //        2. Print the difference between the largest and smallest value
+        for (int i = 0; i<numbers.size(); i++){
 
+            }
 //        3. Print true if the list contains a 1 next to a 1 somewhere
 //        4. Print the sum of the numbers
 //        5. Print the sum of the numbers...
