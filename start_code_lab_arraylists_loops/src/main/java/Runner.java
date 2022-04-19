@@ -48,7 +48,7 @@ public class Runner {
         //System.out.println("Even integers: " + val);
         //}
         //}
-        for (int i = 0; i<numbers.size(); i++) {
+        for (int i = 0; i < numbers.size(); i++) {
             if (numbers.get(i) % 2 == 0) {
                 System.out.println("Even integers: " + numbers.get(i));
             }
@@ -61,7 +61,18 @@ public class Runner {
 
 
 //        3. Print true if the list contains a 1 next to a 1 somewhere
-//        4. Print the sum of the numbers
+        if (numbers.contains(1))
+            System.out.println("It is true that 1 is next to 1");
+
+        //        4. Print the sum of the numbers
+        int numberSum = 0;
+        for(int add:numbers) {
+            numberSum += add;
+        }
+        System.out.println("Sum of the numbers: " + numberSum);
+        }
+    }
+
 //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count
@@ -69,6 +80,3 @@ public class Runner {
 //
 //          So [7, 13, 2] would have sum of 9.
 
-    }
-
-}
