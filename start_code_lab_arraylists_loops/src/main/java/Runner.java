@@ -61,9 +61,17 @@ public class Runner {
 
 
 //        3. Print true if the list contains a 1 next to a 1 somewhere
-        if (numbers.contains(1))
-            System.out.println("It is true that 1 is next to 1");
+        int x = 1;
+        int result = 0;
+                for(int i = 0; i < numbers.size() - 1; i++) {
+                    if (numbers.get(i) == x && numbers.get(i+1) == x){
 
+                        System.out.println(String.valueOf(true));
+                        result = 1;
+                        System.out.println("It is true that 1 is next to 1 " + result);
+                    }
+
+                }
         //        4. Print the sum of the numbers
         int numberSum = 0;
         for(int add:numbers) {
